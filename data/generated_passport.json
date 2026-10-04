@@ -1,0 +1,263 @@
+{
+  "passport_metadata": {
+    "passport_version": "1.0",
+    "generated_by": "TraceX AI",
+    "generated_at": "2026-10-04T19:24:50",
+    "verification_model": "Multi-Agent Verification"
+  },
+  "product_identity": {
+    "name": "Cotton Salwar Kameez (Traditional Apparel)",
+    "sku_or_product_id": "Not provided",
+    "category": "Textile / Apparel"
+  },
+  "supplier": {
+    "name": "Kohinoor Textile Works",
+    "registration_status": "UNKNOWN"
+  },
+  "material": {
+    "composition": "Cotton Yarn",
+    "origin": "Not verified"
+  },
+  "traceability": {
+    "status": "PARTIALLY_TRACED",
+    "chain": [
+      {
+        "entity_type": "SUPPLIER",
+        "entity_name": "Kohinoor Textile Works",
+        "status": "VERIFIED",
+        "source": "Uploaded source document",
+        "notes": "Supplier Profile Registered (Entity Record #KTW-1029)."
+      },
+      {
+        "entity_type": "MATERIAL",
+        "entity_name": "Cotton Yarn",
+        "status": "VERIFIED",
+        "source": "Uploaded source document",
+        "notes": "100% Cotton yarn purity and fiber count sheet present. Raw cotton agricultural origin provenance document is MISSING."
+      },
+      {
+        "entity_type": "PRODUCT",
+        "entity_name": "Cotton Salwar Kameez",
+        "status": "VERIFIED",
+        "source": "Uploaded source document",
+        "notes": "Product Identity verified with Spec Sheet present. Garment specification sheet and quality inspection note also present."
+      },
+      {
+        "entity_type": "EVIDENCE",
+        "entity_name": "Supplier Profile",
+        "status": "VERIFIED",
+        "source": "Uploaded source document",
+        "notes": "Kohinoor Textile Works Entity Record (#KTW-1029)."
+      },
+      {
+        "entity_type": "EVIDENCE",
+        "entity_name": "Cotton Yarn Composition Sheet",
+        "status": "VERIFIED",
+        "source": "Uploaded source document",
+        "notes": "100% Cotton yarn purity and fiber count sheet."
+      },
+      {
+        "entity_type": "EVIDENCE",
+        "entity_name": "Garment Specification Sheet",
+        "status": "VERIFIED",
+        "source": "Uploaded source document",
+        "notes": "Tailoring pattern, sizing, and construction specification."
+      },
+      {
+        "entity_type": "EVIDENCE",
+        "entity_name": "Quality Inspection Note",
+        "status": "VERIFIED",
+        "source": "Uploaded source document",
+        "notes": "Factory visual inspection and seam durability sign-off."
+      },
+      {
+        "entity_type": "EVIDENCE",
+        "entity_name": "Cotton Fiber Origin",
+        "status": "MISSING",
+        "source": "Uploaded source document",
+        "notes": "Raw cotton agricultural origin provenance document missing."
+      },
+      {
+        "entity_type": "EVIDENCE",
+        "entity_name": "Dyeing / Processing Batch Reference",
+        "status": "MISSING",
+        "source": "Uploaded source document",
+        "notes": "Wet processing / dye house lot identification missing."
+      },
+      {
+        "entity_type": "EVIDENCE",
+        "entity_name": "Energy / Environmental Data",
+        "status": "MISSING",
+        "source": "Uploaded source document",
+        "notes": "Factory energy usage or ETP compliance record missing."
+      }
+    ],
+    "gaps": [
+      "Raw-Material Origin: Raw-material origin evidence is incomplete (Cotton source unverified).",
+      "Processing Linkage: Processing batch reference is missing for dyeing/finishing."
+    ]
+  },
+  "evidence_matrix": {
+    "status": "PARTIALLY_VERIFIED",
+    "verified": [
+      "Product Identity",
+      "Supplier Name",
+      "Material Information",
+      "Supplier Profile",
+      "Cotton Yarn Composition Sheet",
+      "Garment Specification Sheet",
+      "Quality Inspection Note"
+    ],
+    "missing": [
+      "Cotton Fiber Origin",
+      "Dyeing / Processing Batch Reference",
+      "Energy / Environmental Data"
+    ],
+    "unclear": [
+      "Destination Market"
+    ],
+    "critical_gaps": [
+      "Raw-material origin evidence is incomplete (Cotton source unverified).",
+      "Processing batch reference is missing for dyeing/finishing."
+    ]
+  },
+  "compliance": {
+    "status": "HUMAN_REVIEW",
+    "requirements": [
+      {
+        "requirement": "Supplier Identity",
+        "status": "SATISFIED",
+        "evidence": "Supplier Profile: Kohinoor Textile Works Entity Record (#KTW-1029)",
+        "knowledge_source": "demo_export_requirements.md",
+        "explanation": "Supplier identity is supported by a registered supplier profile and entity record."
+      },
+      {
+        "requirement": "Material Composition",
+        "status": "SATISFIED",
+        "evidence": "Cotton Yarn Composition Sheet (100% Cotton yarn purity and fiber count sheet)",
+        "knowledge_source": "demo_export_requirements.md",
+        "explanation": "Material composition is supported by the supplied cotton yarn composition sheet."
+      },
+      {
+        "requirement": "Product Identification and Specification",
+        "status": "SATISFIED",
+        "evidence": "Cotton Salwar Kameez spec sheet and Garment Specification Sheet present",
+        "knowledge_source": "demo_export_requirements.md",
+        "explanation": "Product identity and manufacturing specifications are present in the dossier."
+      },
+      {
+        "requirement": "Raw-Material Agricultural Origin",
+        "status": "GAP",
+        "evidence": "Raw cotton agricultural origin provenance document is MISSING",
+        "knowledge_source": "demo_export_requirements.md",
+        "explanation": "Material origin is a separate piece of evidence from composition and is currently absent from the dossier."
+      },
+      {
+        "requirement": "Processing and Batch Reference",
+        "status": "GAP",
+        "evidence": "Dyeing / Processing Batch Reference is MISSING",
+        "knowledge_source": "demo_export_requirements.md",
+        "explanation": "Batch or production references linked to the product are missing, representing a traceability gap."
+      },
+      {
+        "requirement": "Destination Market Compliance",
+        "status": "HUMAN_REVIEW",
+        "evidence": "Destination Market is Not Specified",
+        "knowledge_source": "demo_export_requirements.md",
+        "explanation": "Destination market is unspecified, making it impossible to evaluate destination-specific regulatory obligations without human input."
+      }
+    ],
+    "gaps": [
+      "Raw-material agricultural origin provenance document is missing.",
+      "Dyeing / processing batch reference is missing.",
+      "Destination market is not specified."
+    ],
+    "human_review": [
+      "Destination Market Compliance"
+    ],
+    "recommended_actions": [
+      "Provide the raw cotton agricultural origin provenance document to close the raw-material traceability gap.",
+      "Supply the dyeing and processing batch reference for the wet processing lot.",
+      "Confirm and specify the destination market to determine specific regulatory and compliance requirements."
+    ]
+  },
+  "risk": {
+    "product": "Not Specified",
+    "score": 17,
+    "level": "LOW",
+    "breakdown": {
+      "TRACEABILITY": "MEDIUM",
+      "DOCUMENTATION": "LOW",
+      "COMPLIANCE": "LOW"
+    },
+    "explanation": "The numeric risk score of 17 and overall LOW risk classification are calculated directly by TraceX's deterministic evidence and risk engine. Although certain upstream provenance documents, processing batch references, and destination market details are currently missing, the core product identity, supplier profile, and baseline quality inspection sheets are fully verified. TraceX deterministic risk engine calculated LOW risk at 17/100 from documented evidence/readiness signals.",
+    "human_review_required": true
+  },
+  "verification": {
+    "status": "HUMAN_REVIEW_REQUIRED",
+    "findings": [
+      {
+        "claim": "Compliance Agent reported an empty product string in its root output while evaluating standard export checks.",
+        "verdict": "PARTIALLY_SUPPORTED",
+        "supporting_source": "Compliance Agent JSON output ('product': '')",
+        "issue": "The Compliance Agent omitted the product name in its root metadata field, though it successfully analyzed requirements based on the dossier evidence.",
+        "correction": "Ensure downstream compliance outputs consistently inherit the canonical product identity ('Cotton Salwar Kameez') from the primary dossier."
+      },
+      {
+        "claim": "Risk Agent and Compliance Agent correctly identified missing agricultural origin and batch references as readiness and traceability risks rather than definitive regulatory violations.",
+        "verdict": "SUPPORTED",
+        "supporting_source": "Risk Agent & Compliance Agent payloads",
+        "issue": "None. The agents correctly categorized missing documentation as operational gaps/risks.",
+        "correction": "Maintain clear separation between missing documentation evidence gaps and official legal rejection conclusions."
+      }
+    ],
+    "verified_claims": 18,
+    "flagged_claims": 2,
+    "unsupported_claims": [],
+    "human_review_required": true,
+    "final_guidance": [
+      "Product identity verified as 'Not Specified' against the primary dossier.",
+      "The primary dossier confirms a verified supplier (Kohinoor Textile Works) and verified material composition (100% Cotton Yarn) for the Cotton Salwar Kameez.",
+      "Upstream evidence, traceability, and risk agents correctly identify missing raw cotton agricultural origin provenance and dyeing batch references.",
+      "Destination market is unspecified, meaning destination-specific compliance requires human review.",
+      "Missing documentation must be treated as readiness gaps and workflow triggers for human review, not as definitive legal infractions."
+    ]
+  },
+  "export_readiness": {
+    "status": "HUMAN_REVIEW_REQUIRED",
+    "evidence_gap_count": 3,
+    "human_review_required": true
+  },
+  "evidence_gaps": [
+    "Raw-material origin evidence is incomplete (Cotton source unverified).",
+    "Processing batch reference is missing for dyeing/finishing.",
+    "Destination market is not specified."
+  ],
+  "human_review_flags": [
+    "Review compliance requirement: Destination Market Compliance",
+    "Review risk item: Incomplete raw-material agricultural origin provenance",
+    "Verification layer requires human review."
+  ],
+  "priority_actions": [
+    {
+      "priority": "HIGH",
+      "action": "Specify the intended destination market.",
+      "reason": "Destination-specific export requirements cannot be reliably assessed without the target market."
+    },
+    {
+      "priority": "HIGH",
+      "action": "Provide raw-material/fiber origin provenance evidence.",
+      "reason": "The upstream origin of the material is not fully linked to verified evidence."
+    },
+    {
+      "priority": "HIGH",
+      "action": "Add production, processing or dye-lot batch references.",
+      "reason": "Batch-level linkage is needed to strengthen product traceability."
+    },
+    {
+      "priority": "REVIEW",
+      "action": "Verification layer requires human review.",
+      "reason": "TraceX identified a finding requiring human validation."
+    }
+  ]
+}
